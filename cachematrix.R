@@ -1,6 +1,8 @@
 ## Retrieve inverse of a matrix from cache.
 ## In case it isn't already in cache, compute and put it there.
+## Think of makeCacheMatrix() as a public class.
 
+## Retrieves data or cache for solve()
 ## Returns a list of functions: set, get, setinverse and getinverse
 ## set and get will set/get the value of the matrix.
 ## setinverse and getinverse will set/get the value of inverse matrix.
