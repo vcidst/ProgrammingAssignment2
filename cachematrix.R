@@ -9,13 +9,17 @@
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
+        
+        #Declare functions to initialize/fetch values
         set <- function(y) {
           x <<- y
           i <<- NULL
         }
-        get <- function() x
+        get        <- function()        x
         setinverse <- function(inverse) i <<- inverse
-        getinverse <- function() i
+        getinverse <- function()        i
+        
+        #Make a list of them
         list(set = set, get = get,
              setinverse = setinverse,
              getinverse = getinverse)
